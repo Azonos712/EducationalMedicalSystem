@@ -1,0 +1,62 @@
+﻿<Window x:Name="BonesWindow" x:Class="EducationalMedicalSystem.UI.BonesForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EducationalMedicalSystem.UI" xmlns:helix="http://helix-toolkit.org/wpf"
+        mc:Ignorable="d"
+        Style="{StaticResource DefaultWinwodStyle}" WindowStartupLocation="CenterScreen">
+    <Window.Background>
+        <ImageBrush ImageSource="Backgrounds/simple_back_2.png" TileMode="None" Stretch="Fill"/>
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="67*"/>
+            <RowDefinition Height="615*"/>
+            <RowDefinition Height="100*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Grid Grid.ColumnSpan="2" Background="Transparent" MouseDown="Grid_MouseDown"></Grid>
+
+        <Image x:Name="BackBtn" Style="{StaticResource BackImageStyle}" Grid.Row="0" Grid.Column="1" Margin="0 15 30 0" MouseDown="BackBtn_MouseDown"></Image>
+        <Image x:Name="QuestionBtn" Style="{StaticResource QuestionImageStyle}" Grid.Row="0" Grid.Column="1" Margin="0 15 90 0" 
+               ToolTipService.InitialShowDelay="100" Cursor="Arrow">
+            <Image.ToolTip>
+                <TextBlock Style="{StaticResource TextBlockStyle}" Background="#FFF1F2F7" Width="500" FontSize="36">
+                    ЛКМ - вращение вокруг точки
+                    СКМ - перемещение камеры
+                </TextBlock>
+            </Image.ToolTip>
+        </Image>
+        
+        <StackPanel Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="40">
+            <TextBlock x:Name="TxtInfo" Style="{StaticResource TextBlockStyle}" HorizontalAlignment="Center" Text="Информация" FontSize="32" TextAlignment="Center" Background="#00DEEFF1"></TextBlock>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Margin="30">
+            <Border CornerRadius="7" BorderThickness="4" BorderBrush="#FF0E83B4">
+                <helix:HelixViewport3D x:Name="viewPort3d" MinHeight="500" MinWidth="500" 
+                                       ZoomExtentsWhenLoaded="True" RotateAroundMouseDownPoint="True" 
+                                       IsViewCubeEdgeClicksEnabled="True" ChangeFieldOfViewCursor="ScrollNS" 
+                                       PanCursor="Hand" RotateCursor="SizeAll" ZoomCursor="SizeNS" 
+                                       ZoomRectangleCursor="ScrollSE" ShowCoordinateSystem="True" LimitFPS="False">
+                    <!--Remember to add light to the scene-->
+                    <helix:DefaultLights/>
+                </helix:HelixViewport3D>
+            </Border>
+        </StackPanel>
+        <Button x:Name="LeftBtn" Grid.Row="2" Grid.Column="0" Style="{StaticResource ImageButtonStyle}" Width="75" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0 0 30 0" Click="LeftBtn_Click" >
+            <StackPanel>
+                <Image x:Name="LeftBtnImage" Source="/Buttons/left.png" Stretch="Fill"></Image>
+            </StackPanel>
+        </Button>
+        <Button x:Name="RightBtn" Grid.Row="2" Grid.Column="1" Style="{StaticResource ImageButtonStyle}" Width="75" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="30 0 0 0" Click="RightBtn_Click">
+            <StackPanel>
+                <Image x:Name="RightBtnImage" Source="/Buttons/right.png" Stretch="Fill"></Image>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>

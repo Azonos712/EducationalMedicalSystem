@@ -1,0 +1,194 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Backgrounds\shasty-tela.png" />
+    <None Remove="Backgrounds\simple-back.png" />
+    <None Remove="Backgrounds\simple_back_2.png" />
+    <None Remove="Backgrounds\skelet.png" />
+    <None Remove="Backgrounds\teoryaa.png" />
+    <None Remove="Backgrounds\testy.png" />
+    <None Remove="Backgrounds\Theory\0.png" />
+    <None Remove="Backgrounds\Theory\1.png" />
+    <None Remove="Backgrounds\Theory\10.png" />
+    <None Remove="Backgrounds\Theory\11.png" />
+    <None Remove="Backgrounds\Theory\12.png" />
+    <None Remove="Backgrounds\Theory\13.png" />
+    <None Remove="Backgrounds\Theory\14.png" />
+    <None Remove="Backgrounds\Theory\15.png" />
+    <None Remove="Backgrounds\Theory\16.png" />
+    <None Remove="Backgrounds\Theory\17.png" />
+    <None Remove="Backgrounds\Theory\18.png" />
+    <None Remove="Backgrounds\Theory\19.png" />
+    <None Remove="Backgrounds\Theory\2.png" />
+    <None Remove="Backgrounds\Theory\20.png" />
+    <None Remove="Backgrounds\Theory\21.png" />
+    <None Remove="Backgrounds\Theory\22.png" />
+    <None Remove="Backgrounds\Theory\23.png" />
+    <None Remove="Backgrounds\Theory\24.png" />
+    <None Remove="Backgrounds\Theory\25.png" />
+    <None Remove="Backgrounds\Theory\26.png" />
+    <None Remove="Backgrounds\Theory\27.png" />
+    <None Remove="Backgrounds\Theory\28.png" />
+    <None Remove="Backgrounds\Theory\29.png" />
+    <None Remove="Backgrounds\Theory\3.png" />
+    <None Remove="Backgrounds\Theory\30.png" />
+    <None Remove="Backgrounds\Theory\31.png" />
+    <None Remove="Backgrounds\Theory\32.png" />
+    <None Remove="Backgrounds\Theory\33.png" />
+    <None Remove="Backgrounds\Theory\34.png" />
+    <None Remove="Backgrounds\Theory\35.png" />
+    <None Remove="Backgrounds\Theory\36.png" />
+    <None Remove="Backgrounds\Theory\37.png" />
+    <None Remove="Backgrounds\Theory\38.png" />
+    <None Remove="Backgrounds\Theory\39.png" />
+    <None Remove="Backgrounds\Theory\4.png" />
+    <None Remove="Backgrounds\Theory\40.png" />
+    <None Remove="Backgrounds\Theory\41.png" />
+    <None Remove="Backgrounds\Theory\42.png" />
+    <None Remove="Backgrounds\Theory\5.png" />
+    <None Remove="Backgrounds\Theory\6.png" />
+    <None Remove="Backgrounds\Theory\7.png" />
+    <None Remove="Backgrounds\Theory\8.png" />
+    <None Remove="Backgrounds\Theory\9.png" />
+    <None Remove="Buttons\back.png" />
+    <None Remove="Buttons\backL.png" />
+    <None Remove="Buttons\block.png" />
+    <None Remove="Buttons\close.png" />
+    <None Remove="Buttons\closeL.png" />
+    <None Remove="Buttons\left.png" />
+    <None Remove="Buttons\leftDis.png" />
+    <None Remove="Buttons\plus.png" />
+    <None Remove="Buttons\question.png" />
+    <None Remove="Buttons\questionL.png" />
+    <None Remove="Buttons\right.png" />
+    <None Remove="Buttons\rightDis.png" />
+    <None Remove="Fonts\Circe Rounded Alt Extra Bold.otf" />
+    <None Remove="glavnya-1.png" />
+    <None Remove="Icons\icon.ico" />
+    <None Remove="PartOfBody\jelydok.png" />
+    <None Remove="PartOfBody\kishechnik.png" />
+    <None Remove="PartOfBody\legkie.png" />
+    <None Remove="PartOfBody\MakeChain\jeludok.png" />
+    <None Remove="PartOfBody\MakeChain\kishka.png" />
+    <None Remove="PartOfBody\MakeChain\pishevod.png" />
+    <None Remove="PartOfBody\MakeChain\rot.png" />
+    <None Remove="PartOfBody\MakeChain\tolstkishka.png" />
+    <None Remove="PartOfBody\matka.png" />
+    <None Remove="PartOfBody\mozg.png" />
+    <None Remove="PartOfBody\peshen.png" />
+    <None Remove="PartOfBody\podjedoshnay.png" />
+    <None Remove="PartOfBody\poschky.png" />
+    <None Remove="PartOfBody\selezenka.png" />
+    <None Remove="PartOfBody\serdse.png" />
+    <None Remove="PartOfBody\task4.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HelixToolkit" Version="2.15.0" />
+    <PackageReference Include="HelixToolkit.Core.Wpf" Version="2.15.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\EducationalMedicalSystem.Library\EducationalMedicalSystem.Library.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Backgrounds\shasty-tela.png" />
+    <Resource Include="Backgrounds\simple-back.png" />
+    <Resource Include="Backgrounds\simple_back_2.png" />
+    <Resource Include="Backgrounds\skelet.png" />
+    <Resource Include="Backgrounds\teoryaa.png" />
+    <Resource Include="Backgrounds\testy.png" />
+    <Resource Include="Backgrounds\Theory\1.png" />
+    <Resource Include="Backgrounds\Theory\0.png" />
+    <Resource Include="Backgrounds\Theory\10.png" />
+    <Resource Include="Backgrounds\Theory\11.png" />
+    <Resource Include="Backgrounds\Theory\12.png" />
+    <Resource Include="Backgrounds\Theory\13.png" />
+    <Resource Include="Backgrounds\Theory\14.png" />
+    <Resource Include="Backgrounds\Theory\15.png" />
+    <Resource Include="Backgrounds\Theory\16.png" />
+    <Resource Include="Backgrounds\Theory\17.png" />
+    <Resource Include="Backgrounds\Theory\18.png" />
+    <Resource Include="Backgrounds\Theory\19.png" />
+    <Resource Include="Backgrounds\Theory\2.png" />
+    <Resource Include="Backgrounds\Theory\20.png" />
+    <Resource Include="Backgrounds\Theory\21.png" />
+    <Resource Include="Backgrounds\Theory\22.png" />
+    <Resource Include="Backgrounds\Theory\23.png" />
+    <Resource Include="Backgrounds\Theory\24.png" />
+    <Resource Include="Backgrounds\Theory\25.png" />
+    <Resource Include="Backgrounds\Theory\26.png" />
+    <Resource Include="Backgrounds\Theory\27.png" />
+    <Resource Include="Backgrounds\Theory\28.png" />
+    <Resource Include="Backgrounds\Theory\29.png" />
+    <Resource Include="Backgrounds\Theory\3.png" />
+    <Resource Include="Backgrounds\Theory\30.png" />
+    <Resource Include="Backgrounds\Theory\31.png" />
+    <Resource Include="Backgrounds\Theory\32.png" />
+    <Resource Include="Backgrounds\Theory\33.png" />
+    <Resource Include="Backgrounds\Theory\34.png" />
+    <Resource Include="Backgrounds\Theory\35.png" />
+    <Resource Include="Backgrounds\Theory\36.png" />
+    <Resource Include="Backgrounds\Theory\37.png" />
+    <Resource Include="Backgrounds\Theory\38.png" />
+    <Resource Include="Backgrounds\Theory\39.png" />
+    <Resource Include="Backgrounds\Theory\4.png" />
+    <Resource Include="Backgrounds\Theory\40.png" />
+    <Resource Include="Backgrounds\Theory\41.png" />
+    <Resource Include="Backgrounds\Theory\42.png" />
+    <Resource Include="Backgrounds\Theory\5.png" />
+    <Resource Include="Backgrounds\Theory\6.png" />
+    <Resource Include="Backgrounds\Theory\7.png" />
+    <Resource Include="Backgrounds\Theory\8.png" />
+    <Resource Include="Backgrounds\Theory\9.png" />
+    <Resource Include="Buttons\back.png" />
+    <Resource Include="Buttons\backL.png" />
+    <Resource Include="Buttons\block.png" />
+    <Resource Include="Buttons\close.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Backgrounds\glavnya-1.png">
+      <CopyToOutputDirectory></CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Buttons\closeL.png" />
+    <Resource Include="Buttons\left.png" />
+    <Resource Include="Buttons\leftDis.png" />
+    <Resource Include="Buttons\plus.png" />
+    <Resource Include="Buttons\question.png" />
+    <Resource Include="Buttons\questionL.png" />
+    <Resource Include="Buttons\right.png" />
+    <Resource Include="Buttons\rightDis.png" />
+    <Resource Include="Fonts\Circe Rounded Alt Extra Bold.otf" />
+    <Resource Include="Icons\icon.ico" />
+    <Resource Include="PartOfBody\jelydok.png" />
+    <Resource Include="PartOfBody\kishechnik.png" />
+    <Resource Include="PartOfBody\legkie.png" />
+    <Resource Include="PartOfBody\MakeChain\jeludok.png" />
+    <Resource Include="PartOfBody\MakeChain\kishka.png" />
+    <Resource Include="PartOfBody\MakeChain\pishevod.png" />
+    <Resource Include="PartOfBody\MakeChain\rot.png" />
+    <Resource Include="PartOfBody\MakeChain\tolstkishka.png" />
+    <Resource Include="PartOfBody\matka.png" />
+    <Resource Include="PartOfBody\mozg.png" />
+    <Resource Include="PartOfBody\peshen.png" />
+    <Resource Include="PartOfBody\podjedoshnay.png" />
+    <Resource Include="PartOfBody\poschky.png" />
+    <Resource Include="PartOfBody\selezenka.png" />
+    <Resource Include="PartOfBody\serdse.png" />
+    <Resource Include="PartOfBody\task4.png" />
+  </ItemGroup>
+  
+
+
+</Project>
